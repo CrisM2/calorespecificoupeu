@@ -1,2 +1,42 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Calor Específico</title>
+</head>
+<body>
+	<h1>Calor Específico</h1>
+	<form>
+		<label for="fraccion_w">Fracción másica de agua:</label>
+		<input type="number" id="fraccion_w" name="fraccion_w" min="0" max="1" step="0.001">
+		<br>
+		<label for="fraccion_p">Fracción másica de proteínas:</label>
+		<input type="number" id="fraccion_p" name="fraccion_p" min="0" max="1" step="0.001">
+		<br>
+		<label for="fraccion_g">Fracción másica de grasas:</label>
+		<input type="number" id="fraccion_g" name="fraccion_g" min="0" max="1" step="0.001">
+		<br>
+		<label for="fraccion_ch">Fracción másica de carbohidratos:</label>
+		<input type="number" id="fraccion_ch" name="fraccion_ch" min="0" max="1" step="0.001">
+		<br>
+		<label for="fraccion_c">Fracción másica de cenizas:</label>
+		<input type="number" id="fraccion_c" name="fraccion_c" min="0" max="1" step="0.001">
+		<br>
+		<label for="temperatura">Temperatura (°C):</label>
+		<input type="number" id="temperatura" name="temperatura" min="-273.15" max="5000" step="0.1">
+		<br>
+		<input type="button" value="Calcular" onclick="calcular()">
+	</form>
+	<p id="resultado"></p>
+	<script>
+		function calcular() {
+			var fraccion_w = parseFloat(document.getElementById("fraccion_w").value);
+			var fraccion_p = parseFloat(document.getElementById("fraccion_p").value);
+			var fraccion_g = parseFloat(document.getElementById("fraccion_g").value);
+			var fraccion_ch = parseFloat(document.getElementById("fraccion_ch").value);
+			var fraccion_c = parseFloat(document.getElementById("fraccion_c").value);
+			var temperatura = parseFloat(document.getElementById("temperatura").value);
+
+			if (isNaN(fraccion_w) || isNaN(fraccion_p) || isNaN(fraccion_g) || isNaN(fraccion_ch) || isNaN(fraccion_c) || isNaN(temperatura)) {
+				alert("Todos los campos son requeridos y deben ser números válidos.");
+			} else {
+				var xhr =
