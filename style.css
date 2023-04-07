@@ -32,6 +32,10 @@ button:hover {
 
 body {
 	background-color: #0a0070; /* cambiar por el color de fondo deseado */
-	color: #000000; /* cambiar por el color de fuente deseado */
+	color: #ffffff; /* cambiar por el color de fuente deseado */
+  }
+
+h1 {
+	color: r#ffab00ed;
   }
   
