@@ -15,12 +15,15 @@ input {
 }
 
 button {
+	font-size: 1em;
 	background-color: #ffab00;
 	color: rgb(0, 0, 0);
 	padding: 10px 20px;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	margin-top: 5px
+	
 }
 
 button:hover {
