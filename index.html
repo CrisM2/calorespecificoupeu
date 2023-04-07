@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Calor Específico</title>
-  </head>
-  <body>
-    <h1>Calculadora de Calor Específico</h1>
-    <form onsubmit="calcular(); return false;">
-      <label for="agua">Fracción másica de agua:</label>
-      <input type="number" id="agua" step="0.001" value="0.908"><br>
-      <label for="proteina">Fracción másica de proteína:</label>
-      <input type="number" id="proteina" step="0.001" value="0.004"><br>
-      <label for="grasa">Fracción másica de grasa:</label>
-      <input type="number" id="grasa" step="0.001" value="0.030"><br>
-      <label for="carbohidratos">Fracción másica de carbohidratos:</label>
-      <input type="number" id="carbohidratos" step="0.001" value="0.008"><br>
-      <label for="ceniza">Fracción másica de ceniza:</label>
-      <input type="number" id="ceniza" step="0.001" value="0.050"><br>
-      <label for="temperatura">Temperatura (°C):</label>
-      <input type="number" id="temperatura" value="2.0"><br>
-      <button type="button" onclick="calcular()">Calcular</button>
-    </form>
-    <p id="resultado"></p>
-    <script>
-      function calcular() {
-        const agua = document.getElementById("agua").value;
-        const proteina = document.getElementById("proteina").value;
-        const grasa = document.getElementById("grasa").value;
-        const carbohidratos = document.getElementById("carbohidratos").value;
-        const ceniza = document.getElementById("ceniza").value;
-        const temperatura = document.getElementById("temperatura").value;
+<head>
+	<title>Calculadora de calor específico</title>
+</head>
+<body>
+	<h1>Calculadora de calor específico</h1>
+	<label for="temperatura">Temperatura (°C):</label>
+	<input type="number" id="temperatura" name="temperatura" min="0" max="100">
+	<button onclick="calcular()">Calcular</button>
+	<p id="resultado"></p>
 
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", `https://api.openai.com/v1/calor-especifico?agua=${agua}&proteina=${proteina}&grasa=${grasa}&carbohidratos=${carbohidratos}&ceniza=${ceniza}&temperatura=${temperatura}`);
+	<script>
+		function calcular() {
+			// Definir los valores de los coeficientes para cada alimento
+			let W = 4.1762;
+			let a_w = -0.000090864;
+			let b_w = 0.0000054731;
 
-        xhr.onload = function() {
-          if (xhr.status === 200) {
-            const resultado = JSON.parse(xhr.responseText).resultado;
-            document.getElementById("resultado").textContent = `El calor específico del alimento a ${temperatura}°C es: ${resultado.toFixed(4)} J/(g·K)`;
-          }
-        };
+			let P = 2.0082;
+			let a_p = 0.0012089;
+			let b_p = -0.0000013129;
 
-        xhr.send();
-      }
-    </script>
-  </body>
+			let G = 1.9842;
+			let a_g = 0.0014733;
+			let b_g = -0.0000048008;
+
+			let CH = 1.5488;
+			let a_ch = 0.0019625;
+			let b_ch = -0.0000059399;
+
+			let C = 1.0926;
+			let a_c = 0.0018896;
+			let b_c = -0.0000036817;
+
+			// Obtener la temperatura ingresada por el usuario
+			let T = document.getElementById("temperatura").value;
+
+			// Calcular los valores de calor específico para cada alimento
+			let c_w = W + a_w*T + b_w*T**2;
+			let c_p = P + a_p*T + b_p*T**2;
+			let c_g = G + a_g*T + b_g*T**2;
+			let c_ch = CH + a_ch*T + b_ch*T**2;
+			let c_c = C + a_c*T + b_c*T**2;
+
+			// Calcular el calor específico del alimento combinado
+			let x_w = 0.908;
+			let x_p = 0.004;
+			let x_g = 0.03;
+			let x_ch = 0.008;
+			let x_c = 0.05;
+
+			let c_alimento = x_w*c_w + x_p*c_p + x_g*c_g + x_ch*c_ch + x_c*c_c;
+
+			// Mostrar el resultado
+			document.getElementById("resultado").innerHTML = "El calor específico del alimento a " + T + "°C es: " + c_alimento.toFixed(4) + " J/(g*K)";
+		}
+	</script>
+</body>
 </html>
