@@ -23,7 +23,6 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 5px
-	
 }
 
 button:hover {
@@ -44,12 +43,16 @@ body {
 h1 {
 	color: #ffab00ed;
 	font-size: 1.9em;
+	text-align: center;
   }
 header {
-	background-image: url('file:///C:/Users/InTeL-PC/Documents/GitHub/crism2.github.io/Images/cp%20logo%20indali.png');
+	background-image: url('Images/cplogoindali.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left;
+	text-align: left;
+	width: 200px;
+	height: 200px;
 	/* otros estilos de la cabecera */
   }
   
