@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Calculadora de Calor Específico</title>
+    <meta charset="UTF-8">
+    <title>Calor Específico</title>
   </head>
   <body>
     <h1>Calculadora de Calor Específico</h1>
-    <label for="temperatura">Temperatura (°C):</label>
-    <input type="number" id="temperatura" name="temperatura" />
-    <br />
-    <label for="xw">Fracción másica de agua:</label>
-    <input type="number" id="xw" name="xw" />
-    <br />
-    <label for="xp">Fracción másica de proteína:</label>
-    <input type="number" id="xp" name="xp" />
-    <br />
-    <label for="xg">Fracción másica de grasa:</label>
-    <input type="number" id="xg" name="xg" />
-    <br />
-    <label for="xch">Fracción másica de carbohidratos:</label>
-    <input type="number" id="xch" name="xch" />
-    <br />
-    <label for="xc">Fracción másica de ceniza:</label>
-    <input type="number" id="xc" name="xc" />
-    <br />
-    <button onclick="calcular()">Calcular</button>
-    <br />
+    <form>
+      <label for="agua">Fracción másica de agua:</label>
+      <input type="number" id="agua" step="0.001" value="0.908"><br>
+      <label for="proteina">Fracción másica de proteína:</label>
+      <input type="number" id="proteina" step="0.001" value="0.004"><br>
+      <label for="grasa">Fracción másica de grasa:</label>
+      <input type="number" id="grasa" step="0.001" value="0.030"><br>
+      <label for="carbohidratos">Fracción másica de carbohidratos:</label>
+      <input type="number" id="carbohidratos" step="0.001" value="0.008"><br>
+      <label for="ceniza">Fracción másica de ceniza:</label>
+      <input type="number" id="ceniza" step="0.001" value="0.050"><br>
+      <label for="temperatura">Temperatura (°C):</label>
+      <input type="number" id="temperatura" value="2.0"><br>
+      <button type="button" onclick="calcular()">Calcular</button>
+    </form>
     <p id="resultado"></p>
     <script>
       function calcular() {
+        const agua = document.getElementById("agua").value;
+        const proteina = document.getElementById("proteina").value;
+        const grasa = document.getElementById("grasa").value;
+        const carbohidratos = document.getElementById("carbohidratos").value;
+        const ceniza = document.getElementById("ceniza").value;
         const temperatura = document.getElementById("temperatura").value;
-        const xw = document.getElementById("xw").value;
-        const xp = document.getElementById("xp").value;
-        const xg = document.getElementById("xg").value;
-        const xch = document.getElementById("xch").value;
-        const xc = document.getElementById("xc").value;
-        const resultado = document.getElementById("resultado");
 
-        fetch(`/calor_especifico?temperatura=${temperatura}&xw=${xw}&xp=${xp}&xg=${xg}&xch=${xch}&xc=${xc}`)
-          .then((response) => response.json())
-          .then((data) => {
-            resultado.textContent = `El calor específico del alimento a ${temperatura}°C es: ${data} J/(g*K)`;
-          })
-          .catch((error) => {
-            resultado.textContent = "Ha ocurrido un error al calcular el calor específico";
-            console.error(error);
-          });
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", `https://api.openai.com/v1/calor-especifico?agua=${agua}&proteina=${proteina}&grasa=${grasa}&carbohidratos=${carbohidratos}&ceniza=${ceniza}&temperatura=${temperatura}`);
+
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            const resultado = JSON.parse(xhr.responseText).resultado;
+            document.getElementById("resultado").textContent = `El calor específico del alimento a ${temperatura}°C es: ${resultado.toFixed(4)} J/(g·K)`;
+          }
+        };
+
+        xhr.send();
       }
     </script>
   </body>
