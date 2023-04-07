@@ -45,9 +45,9 @@ h1 {
 	color: #ffab00ed;
 	font-size: 1.9em;
   }
-  
 header {
-	background-image: url("/Images/cp logo indali.png");
+	background-image: url('file:///C:/Users/InTeL-PC/Documents/GitHub/crism2.github.io/Images/cp%20logo%20indali.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left;
 	/* otros estilos de la cabecera */
