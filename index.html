@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora de Calor Específico</title>
+  </head>
+  <body>
+    <h1>Calculadora de Calor Específico</h1>
+    <label for="temperatura">Temperatura (°C):</label>
+    <br />
+    <label for="xw">Fracción másica de agua:</label>
+    <br />
+    <label for="xp">Fracción másica de proteína:</label>
+    <input type="number" id="xp" name="xp" />
+    <br />
+    <label for="xg">Fracción másica de grasa:</label>
+    <input type="number" id="xg" name="xg" />
+    <br />
+    <label for="xch">Fracción másica de carbohidratos:</label>
+    <input type="number" id="xch" name="xch" />
+    <br />
+    <label for="xc">Fracción másica de ceniza:</label>
+    <input type="number" id="xc" name="xc" />
+    <br />
+    <button onclick="calcular()">Calcular</button>
+    <br />
+    <p id="resultado"></p>
+    <script>
+      function calcular() {
+        const temperatura = document.getElementById("temperatura").value;
+        const xw = document.getElementById("xw").value;
+        const xp = document.getElementById("xp").value;
+        const xg = document.getElementById("xg").value;
+        const xch = document.getElementById("xch").value;
+        const xc = document.getElementById("xc").value;
+        const resultado = document.getElementById("resultado");
 
-			} else {
-				var xhr =
+          .then((data) => {
