@@ -47,9 +47,9 @@ h1 {
   }
   
 header {
-	background-image: url("/Images/cp\ logo\ indali.png");
+	background-image: url("/Images/cp logo indali.png");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 	/* otros estilos de la cabecera */
   }
   
