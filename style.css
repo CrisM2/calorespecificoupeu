@@ -1,5 +1,5 @@
 .container {
-	max-width: 650px;
+	max-width: 1300px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -22,7 +22,7 @@ button {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	margin-top: 5px
+	margin-top: 10px
 }
 
 button:hover {
@@ -45,14 +45,25 @@ h1 {
 	font-size: 1.9em;
 	text-align: center;
   }
+
+form {
+	margin-top: 30px;
+  }
+
 header {
 	background-image: url('Images/cplogoindali.png');
-	background-size: cover;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
-	background-position: left;
-	text-align: left;
-	width: 200px;
-	height: 200px;
+	background-position: left top;
+	text-align: center;
+	width: 100%; /* ajustar al ancho completo de la pantalla */
+	height: 110px; /* ajustar la altura del encabezado */
 	/* otros estilos de la cabecera */
-  }
+}
+
+header img {
+	height: 100%; /* ajustar la altura del logo para que sea igual a la altura del encabezado */
+	float: left; /* alinear el logo a la izquierda */
+}
+
   
