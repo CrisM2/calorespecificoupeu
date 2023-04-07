@@ -1,2 +1,3 @@
-[Página de inicio del repositorio](https://github.com/tu-usuario/tu-repositorio)
-Página de inicio del repositorio
+
+Mi [Repositorio](https://github.com/tu-usuario/tu-repositorio)
+
