@@ -1,5 +1,5 @@
 .container {
-	max-width: 500px;
+	max-width: 600px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -36,6 +36,6 @@ body {
   }
 
 h1 {
-	color: r#ffab00ed;
+	color: #ffab00ed;
   }
   
