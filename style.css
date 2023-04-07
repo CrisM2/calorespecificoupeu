@@ -46,4 +46,10 @@ h1 {
 	font-size: 1.9em;
   }
   
+header {
+	background-image: url("C:/Users/InTeL-PC/Pictures/Upeu Archivos/cp logo indali.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* otros estilos de la cabecera */
+  }
   
