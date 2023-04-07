@@ -35,4 +35,16 @@
         const xc = document.getElementById("xc").value;
         const resultado = document.getElementById("resultado");
 
+        fetch(`/calor_especifico?temperatura=${temperatura}&xw=${xw}&xp=${xp}&xg=${xg}&xch=${xch}&xc=${xc}`)
+          .then((response) => response.json())
           .then((data) => {
+            resultado.textContent = `El calor específico del alimento a ${temperatura}°C es: ${data} J/(g*K)`;
+          })
+          .catch((error) => {
+            resultado.textContent = "Ha ocurrido un error al calcular el calor específico";
+            console.error(error);
+          });
+      }
+    </script>
+  </body>
+</html>
