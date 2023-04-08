@@ -1,7 +1,7 @@
 .container {
 	max-width: auto;
 	margin: auto auto;
-	height: auto;
+	height: 100%;
 }
 
 input {
@@ -72,7 +72,7 @@ header {
 
 h1 {
 	color: #ffab00ed;
-	font-size: 1.9em;
+	font-size: 180%;
 	text-align: center;
 	padding: 0px 0px;
   }
