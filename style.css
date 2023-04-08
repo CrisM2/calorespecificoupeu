@@ -90,15 +90,16 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: auto;
+	height: 60px;
 	box-shadow: 0 0 3px 3px #ffab00;
+	padding : 0 0 10px 0
   }
 
   /* Estilos para los enlaces del pie de página */
 footer a {
 	color: #0a0070;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: auto;
 	margin : 1.5%;
 	
   }
