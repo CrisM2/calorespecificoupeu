@@ -66,7 +66,7 @@ header {
 	width: 100%; /* ajustar al ancho completo de la pantalla */
 	height: 100px; /* ajustar la altura del encabezado */
 	margin: 0px -8px;
-	padding: 4px 0 0 0;
+	padding: 0px 0 0 0;
 	
 }
 	header img {
