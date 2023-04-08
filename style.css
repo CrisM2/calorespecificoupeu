@@ -48,7 +48,7 @@ body {
 form {
 	margin: 15px;
 	text-align: left;
-	margin-top: 180px
+	margin-top: 135px;
   }
 
 header {
@@ -61,9 +61,12 @@ header {
 	text-align: center;
 	position: fixed;
 	top: 0;
+	
+	font-size: 60%;
 	width: 100%; /* ajustar al ancho completo de la pantalla */
-	height: auto; /* ajustar la altura del encabezado */
+	height: 100px; /* ajustar la altura del encabezado */
 	margin: 0px -8px;
+	padding: 4px 0 0 0;
 	
 }
 	header img {
@@ -74,8 +77,6 @@ header {
 
 h1 {
 	color: #0a0070;
-	font-size: 150%;
-	padding: 0px 100px;
   }
 
 /* Estilos para el pie de página */
@@ -105,5 +106,3 @@ footer a {
 footer a:hover {
 	text-decoration: underline;
   }
-
-  
