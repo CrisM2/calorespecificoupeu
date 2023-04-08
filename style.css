@@ -62,7 +62,7 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%; /* ajustar al ancho completo de la pantalla */
-	height: 150px; /* ajustar la altura del encabezado */
+	height: auto; /* ajustar la altura del encabezado */
 	margin: 0px -8px;
 	
 }
