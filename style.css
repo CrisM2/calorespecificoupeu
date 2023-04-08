@@ -1,7 +1,7 @@
 .container {
 	max-width: auto;
 	margin: auto 15px;
-	text-align: center;
+	
 }
 
 input {
@@ -47,7 +47,8 @@ h1 {
   }
 
 form {
-	margin-top: 30px;
+	margin-top: 50px;
+	text-align: center;
   }
 
 header {
@@ -71,7 +72,7 @@ footer {
 	background-color: #ffab00; /* color de fondo */
 	color: #fff; /* color de texto */
 	text-align: left;
-	padding: 10px;
+	padding: -10px;
 	margin-top: auto;
 	margin: auto -15px;
 
@@ -83,21 +84,22 @@ footer {
   
 .inner-footer {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: auto auto;
 	padding: 100%;
 	text-align: left;
   }
 
   /* Estilos para los enlaces del pie de página */
-footer a {
+  footer a {
 	color: #000000;
 	text-decoration: none;
 	font-size: 1.1em;
-	margin : 20px;
+	margin : 15px;
   }
   
 footer a:hover {
 	text-decoration: underline;
+	color:#0a0070
   }
 
   
