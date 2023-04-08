@@ -1,7 +1,7 @@
 .container {
 	max-width: auto;
 	margin: auto auto;
-	height: 500px;
+	height: 600px;
 }
 
 input {
@@ -48,7 +48,7 @@ body {
 form {
 	margin: 15px;
 	text-align: left;
-	margin-top: 121px;
+	margin-top: 125px;
   }
 
 header {
