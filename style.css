@@ -76,7 +76,7 @@ h1 {
 
 /* Estilos para el pie de página */
 footer {
-	background-color: #ffab00; /* color de fondo */
+	background-color: #0a0070; /* color de fondo */
 	color: #fff; /* color de texto */
 	text-align: left;
 	margin-top: auto;
@@ -89,8 +89,8 @@ footer {
   }
 
   /* Estilos para los enlaces del pie de página */
-  footer a {
-	color: #000000;
+footer a {
+	color: #ffab00;
 	text-decoration: none;
 	font-size: 1em;
 	margin : 15px;
@@ -98,7 +98,7 @@ footer {
   
 footer a:hover {
 	text-decoration: underline;
-	color:#0a0070
+	color:#d48e00
   }
 
   
