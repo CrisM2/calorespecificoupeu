@@ -1,7 +1,7 @@
 .container {
 	max-width: auto;
 	margin: auto auto;
-	height: 100%;
+	height: 1000px;
 }
 
 input {
@@ -48,11 +48,11 @@ body {
 form {
 	margin: 15px;
 	text-align: left;
-	margin-top: 175px
+	margin-top: 13.75%
   }
 
 header {
-	background-color: #0a0070;
+	background-color: #ffab00;
 	background-image: url('Images/cplogoindali2.png');
 	background-size: auto 100%;
 	background-repeat: no-repeat;
@@ -73,14 +73,14 @@ header {
 	}
 
 h1 {
-	color: #ffab00ed;
+	color: #0a0070;
 	font-size: 1.9em;
 	padding: 0px 150px;
   }
 
 /* Estilos para el pie de página */
 footer {
-	background-color: #0a0070; /* color de fondo */
+	background-color: #ffab00; /* color de fondo */
 	color: #fff; /* color de texto */
 	text-align: left;
 	margin-top: auto;
@@ -95,7 +95,7 @@ footer {
 
   /* Estilos para los enlaces del pie de página */
 footer a {
-	color: #ffab00;
+	color: #0a0070;
 	text-decoration: none;
 	font-size: 1em;
 	margin : 15px;
