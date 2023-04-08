@@ -1,7 +1,7 @@
 .container {
 	max-width: auto;
 	margin: auto auto;
-	height: 1000px;
+	height: auto;
 }
 
 input {
@@ -11,22 +11,25 @@ input {
 	margin-bottom: 10px;
 	border: none;
 	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(255, 255, 255, 0.568);
+	box-shadow: 0px 0px 2px 2px #ffab00;
 }
 
 button {
 	font-size: 1em;
-	background-color: #ffab00;
-	color: rgb(0, 0, 0);
+	background-color: #0a0070;
+	color: #ffab00;
 	padding: 10px 20px;
 	border: none;
+	box-shadow: 0px 0px 2px 2px #ffab00;
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 10px
 }
 
 button:hover {
-	background-color: #d48e00;
+	background-color: #ffb824;
+	color: #0a0070;
+	box-shadow: 0px 0px 2px 2px #ffb824;
 }
 
 #resultado {
@@ -54,24 +57,24 @@ header {
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-position: left top;
+	box-shadow: 0px 0px 3px 3px #ffab00;
 	position: fixed;
 	top: 0;
 	width: 100%; /* ajustar al ancho completo de la pantalla */
 	height: 150px; /* ajustar la altura del encabezado */
-	margin: auto
+	margin: 0px -8px;
 }
-
-header img {
+	header img {
 	background-color: #0a0070;
 	height: 100%; /* ajustar la altura del logo para que sea igual a la altura del encabezado */
 	float: left; /* alinear el logo a la izquierda */
-}
+	}
 
 h1 {
 	color: #ffab00ed;
 	font-size: 1.9em;
 	text-align: center;
-	padding: 0px 10px;
+	padding: 0px 0px;
   }
 
 /* Estilos para el pie de página */
@@ -85,7 +88,8 @@ footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: auto;	
+	height: auto;
+	box-shadow: 0 0 3px 3px #ffab00;
   }
 
   /* Estilos para los enlaces del pie de página */
@@ -94,11 +98,11 @@ footer a {
 	text-decoration: none;
 	font-size: 1em;
 	margin : 15px;
+	
   }
   
 footer a:hover {
 	text-decoration: underline;
-	color:#d48e00
   }
 
   
