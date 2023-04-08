@@ -58,11 +58,13 @@ header {
 	background-repeat: no-repeat;
 	background-position: left top;
 	box-shadow: 0px 0px 3px 3px #ffab00;
+	text-align: center;
 	position: fixed;
 	top: 0;
 	width: 100%; /* ajustar al ancho completo de la pantalla */
 	height: 150px; /* ajustar la altura del encabezado */
 	margin: 0px -8px;
+	
 }
 	header img {
 	background-color: #0a0070;
@@ -72,8 +74,7 @@ header {
 
 h1 {
 	color: #ffab00ed;
-	font-size: 180%;
-	text-align: center;
+	font-size: 1.9em;
 	padding: 0px 150px;
   }
 
