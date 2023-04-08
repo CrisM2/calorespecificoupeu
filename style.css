@@ -48,7 +48,7 @@ body {
 form {
 	margin: 15px;
 	text-align: left;
-	margin-top: 13.75%
+	margin-top: 180px
   }
 
 header {
@@ -68,14 +68,14 @@ header {
 }
 	header img {
 	background-color: #0a0070;
-	height: 100%; /* ajustar la altura del logo para que sea igual a la altura del encabezado */
+	height: 50%; /* ajustar la altura del logo para que sea igual a la altura del encabezado */
 	float: left; /* alinear el logo a la izquierda */
 	}
 
 h1 {
 	color: #0a0070;
-	font-size: 1.9em;
-	padding: 0px 150px;
+	font-size: 150%;
+	padding: 0px 100px;
   }
 
 /* Estilos para el pie de página */
@@ -98,7 +98,7 @@ footer a {
 	color: #0a0070;
 	text-decoration: none;
 	font-size: 1em;
-	margin : 2.5%;
+	margin : 1.5%;
 	
   }
   
