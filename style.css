@@ -73,19 +73,19 @@ footer {
 	color: #fff; /* color de texto */
 	text-align: left;
 	margin-top: auto;
-	margin: auto -15px;
+	margin: auto -8px;
 
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 6%;	
+	height: 60px auto;	
   }
 
   /* Estilos para los enlaces del pie de página */
   footer a {
 	color: #000000;
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1em;
 	margin : 15px;
   }
   
