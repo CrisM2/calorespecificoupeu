@@ -1,6 +1,6 @@
 .container {
-	max-width: 1300px;
-	margin: 0 auto;
+	max-width: auto;
+	margin: auto 15px;
 	text-align: center;
 }
 
@@ -65,5 +65,39 @@ header img {
 	height: 100%; /* ajustar la altura del logo para que sea igual a la altura del encabezado */
 	float: left; /* alinear el logo a la izquierda */
 }
+
+/* Estilos para el pie de página */
+footer {
+	background-color: #ffab00; /* color de fondo */
+	color: #fff; /* color de texto */
+	text-align: left;
+	padding: 10px;
+	margin-top: auto;
+	margin: auto -15px;
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 6%;	
+  }
+  
+.inner-footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100%;
+	text-align: left;
+  }
+
+  /* Estilos para los enlaces del pie de página */
+footer a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 1.1em;
+	margin : 20px;
+  }
+  
+footer a:hover {
+	text-decoration: underline;
+  }
 
   
