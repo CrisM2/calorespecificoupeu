@@ -122,6 +122,12 @@ footer {
 	
 }
 
+.footer-links p,
+.footer p {
+	line-height: 0.5;
+}
+
+
 .footer-links a {
 	color: #ffab00;
 	text-decoration: none;
