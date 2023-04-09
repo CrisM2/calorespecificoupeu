@@ -2,6 +2,7 @@
 	max-width: auto;
 	margin: auto auto;
 	height: 550px;
+	
 }
 
 input {
@@ -42,6 +43,7 @@ body {
 	background-color: #0a0070; /* cambiar por el color de fondo deseado */
 	color: #ffffff; /* cambiar por el color de fuente deseado */
 	font-size: 1.3em;
+	
   }
 
 
