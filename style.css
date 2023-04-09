@@ -48,6 +48,12 @@ form {
 	margin: 15px;
 	text-align: left;
 	margin-top: 125px;
+
+	display: flow-root;
+	justify-content: space-between;
+	align-items: center;
+	max-width: auto;
+	
   }
 
 header {
@@ -76,6 +82,7 @@ header {
 
 h1 {
 	color: #ffab00;
+	text-size-adjust: auto;
   }
 
 /* Estilos para el pie de página */
@@ -111,6 +118,7 @@ footer {
 
 .footer-links {
 	text-align: Left;
+	text-size-adjust: auto;
 	
 }
 
