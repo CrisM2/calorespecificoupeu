@@ -1,5 +1,5 @@
-[Mi Repositorio](https://github.com/CrisM2/calorespecificoupeu)
-[Acerca de nosotros](https://sites.google.com/upeu.edu.pe/calor/about-us)
+[Mi Repositorio](https://github.com/CrisM2/calorespecificoupeu){:target="_blank"}
+[Acerca de nosotros](https://sites.google.com/upeu.edu.pe/calor/about-us){:target="_blank"}
 
 "Copyright © 2023 Indali Genial. Todos los derechos reservados.
 
