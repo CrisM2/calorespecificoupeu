@@ -74,6 +74,8 @@ header {
 
 header .logo-container {
 	height: cover;
+	width: 90px;
+	z-index: 1;
 }
 
 header .logo-container img {
@@ -86,6 +88,7 @@ h1 {
 	text-align: center;
 	flex-grow: 1;
 	margin-left: -90px;
+	z-index: 0;
   }
   
 
