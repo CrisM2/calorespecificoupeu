@@ -86,30 +86,37 @@ footer {
 	margin-top: auto;
 	margin: auto -8px;
 
-	background-image: url('Images/logoindaligenial.jpg');
-	background-repeat: no-repeat;
-	background-position: right ;
-	background-size: 60px;
-	background-position-x: 95%;
-
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
 	box-shadow: 0 0 3px 3px #ffab00;
-	padding : 0 15px 14px 15px
+	padding : 6px 10px 4px 10px
   }
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: auto;
+	margin: 0 auto;
+}
 
-  /* Estilos para los enlaces del pie de página */
-	footer a {
+.footer-logo img {
+	width: 60px;
+	height: auto;
+	margin-right: 35px;
+}
+
+.footer-links {
+	text-align: left;
+}
+
+.footer-links a {
 	color: #0a0070;
 	text-decoration: none;
-	font-size: auto;
-	margin : 1.5%;
-	
-  }
-  
-	footer a:hover {
+	margin-left: 0;
+}
+
+.footer-links a:hover {
 	text-decoration: underline;
 }
-  
