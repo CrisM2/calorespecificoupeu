@@ -40,7 +40,6 @@ button:hover {
 	font-size: 1.2em;
 	text-align: center;
 	font-family: 'IBM Plex Sans';
-	font-variant: small-caps;
 }
 
 body {
@@ -157,7 +156,7 @@ footer {
 	text-decoration: none;
 	margin-left: 25px;
 	font-family: "IBM PLex Sans";
-	font-variant: small-caps;
+	font-size: 85%;
 }
 
 .footer-links a:hover {
