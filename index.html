@@ -13,38 +13,41 @@
   
 <body>
 	<div class="container">
-		<header>
-			<div class="logo-container">
-			  <a href="https://crism2.github.io/calorespecificoupeu/">
-				<img src="Images/cplogoindali.png" alt="Logo CP Indali">
-			  </a>
-			</div>
-			<h1>CALCULADORA DE CALOR ESPECÍFICO<br>INDALI</h1>
-		</header>		  
+	  <header>
+		<div class="logo-container">
+		  <a href="https://crism2.github.io/calorespecificoupeu/">
+			<img src="Images/cplogoindali.png" alt="Logo CP Indali">
+		  </a>
+		</div>
+		<h1>CALCULADORA DE CALOR ESPECÍFICO<br>INDALI</h1>
+	  </header>      
+	  <div class="form-container">
 		<form>
-			<label for="agua">Agua:</label>
-			<input type="number" step="0.01" id="agua" name="agua"><br>
-
-			<label for="proteina">Proteína:</label>
-			<input type="number" step="0.01" id="proteina" name="proteina"><br>
-
-			<label for="grasa">Grasa:</label>
-			<input type="number" step="0.01" id="grasa" name="grasa"><br>
-
-			<label for="carbohidratos">Carbohidratos:</label>
-			<input type="number" step="0.01" id="carbohidratos" name="carbohidratos"><br>
-
-			<label for="ceniza">Ceniza:</label>
-			<input type="number" step="0.01" id="ceniza" name="ceniza"><br>
-
-			<label for="temperatura">Temperatura:</label>
-			<input type="number" step="0.1" id="temperatura" name="temperatura"><br>
-
-			<button type="button" onclick="calcular()">Calcular</button>
-
-			<div id="resultado"></div>
-			
+		  <label for="agua">Agua:</label>
+		  <input type="number" step="0.01" id="agua" name="agua"><br>
+  
+		  <label for="proteina">Proteína:</label>
+		  <input type="number" step="0.01" id="proteina" name="proteina"><br>
+  
+		  <label for="grasa">Grasa:</label>
+		  <input type="number" step="0.01" id="grasa" name="grasa"><br>
+  
+		  <label for="carbohidratos">Carbohidratos:</label>
+		  <input type="number" step="0.01" id="carbohidratos" name="carbohidratos"><br>
+  
+		  <label for="ceniza">Ceniza:</label>
+		  <input type="number" step="0.01" id="ceniza" name="ceniza"><br>
+  
+		  <label for="temperatura">Temperatura:</label>
+		  <input type="number" step="0.1" id="temperatura" name="temperatura"><br>
+  
+		  <button type="button" onclick="calcular()">Calcular</button>
+  
+		  <div id="resultado"></div>
+		  
 		</form>
+		<iframe src="Papers/tablas-peruanas-QR.pdf"></iframe>
+	  </div>
 	</div>
 	<script src="script.js"></script>
 </body>
