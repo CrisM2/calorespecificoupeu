@@ -156,6 +156,8 @@ footer {
 	color: #ffab00;
 	text-decoration: none;
 	margin-left: 25px;
+	font-family: "IBM PLex Sans";
+	font-variant: small-caps;
 }
 
 .footer-links a:hover {
