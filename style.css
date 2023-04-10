@@ -2,6 +2,7 @@
 	max-width: auto;
 	margin: auto auto;
 	height: 550px;
+	
 }
 
 input {
@@ -16,6 +17,7 @@ input {
 
 button {
 	font-size: 1em;
+	font-family: 'IBM Plex Mono';
 	background-color: #0a0070;
 	color: #ffab00;
 	padding: 10px 20px;
@@ -24,6 +26,7 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 	margin-top: 10px
+	
 }
 
 button:hover {
@@ -36,6 +39,8 @@ button:hover {
 	margin-top: 20px;
 	font-size: 1.2em;
 	text-align: center;
+	font-family: 'IBM Plex Sans';
+	font-variant: small-caps;
 }
 
 body {
@@ -52,15 +57,17 @@ form {
   }
   label {
 	display: inline-block;
-	width: 135px;
+	width: 145px;
 	vertical-align: top;
 	text-align: left;
+	font-family: 'IBM Plex Sans';
   }
   
   input {
 	display: inline-block;
 	width: 150px;
 	vertical-align: top;
+	font-family: 'IBM Plex Mono';
   }
 
 header {
@@ -96,6 +103,8 @@ h1 {
 	flex-grow: 1;
 	margin-left: -90px;
 	z-index: 0;
+	font-family: 'IBM Plex Sans';
+	font-style: normal;
   }
   
 

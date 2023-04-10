@@ -1,4 +1,4 @@
-[Mi Repositorio](https://github.com/CrisM2/calorespecificoupeu{:target="_blank"}){:target="_blank"}
+[Mi Repositorio](https://github.com/CrisM2/calorespecificoupeu){:target="_blank"}
 
 [Acerca de nosotros](https://sites.google.com/upeu.edu.pe/calor/about-us){:target="_blank"}
 
