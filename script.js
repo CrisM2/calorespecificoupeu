@@ -33,5 +33,5 @@ function calcular() {
     const c_alimento = agua * c_w + proteina * c_p + grasa * c_g + carbohidratos * c_ch + ceniza * c_c;
 
     // Mostrar el resultado en el campo de salida
-    document.getElementById("resultado").innerHTML = "El calor específico del alimento a " + temperatura + "°C es:\n"+ c_alimento.toFixed(4) + " J/(g*K)";
+    document.getElementById("resultado").innerHTML = "El calor específico del alimento a " + temperatura + "°C es:\n"+ c_alimento.toFixed(4) + " J/(g*°C)";
 }
