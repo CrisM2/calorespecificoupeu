@@ -1,7 +1,7 @@
 .container {
 	max-width: auto;
 	margin: auto auto;
-	height: 550px;
+	height: 600px;
 }
 
 button {
@@ -37,12 +37,15 @@ body {
 	margin-top: 125px;
 	display: flex;
 	justify-content: space-between;
+
   }
   
 form {
 	text-align: center;
 	margin: 0px 0 0 0px;
 	flex-grow: 1;
+	float: left;
+  	width: 50%;
   }
   
 label {
@@ -67,16 +70,9 @@ input {
 	width: 160px;
 	vertical-align: top;
 	font-family: 'IBM Plex Mono';
-	font-weight: 400;
+	font-weight: 500;
   }
   
-iframe {
-	width: 47%;
-	height: 400px;
-	float: center;
-	margin-right: 3%;
-	margin-top: -5px;
-  }  
 
 #resultado {
 	margin-top: 20px;
@@ -185,3 +181,26 @@ footer {
 .footer-links a:hover {
 	text-decoration: underline;
 }
+
+.sheet-container {
+	width: 50%;
+	height: 400px;
+	float: right;
+	margin-right: 3%;
+	margin-top: -5px;
+	text-align: center;
+	font-family: "IBM PLex Sans";
+	font-weight: 400;
+  }
+
+.sheet-container a {
+    color: #ffffff;
+	text-decoration: none;
+}
+
+.sheet-container a:hover {
+    text-decoration: underline;
+	color: #ffab00
+}
+
+  
