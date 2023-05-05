@@ -5,6 +5,7 @@ function calcular() {
     const grasa = document.getElementById("grasa").value;
     const carbohidratos = document.getElementById("carbohidratos").value;
     const ceniza = document.getElementById("ceniza").value;
+    const hielo = document.getElementById("hielo").value;
     const temperatura = document.getElementById("temperatura").value;
 
     // Calcular el calor específico del alimento combinado
@@ -23,14 +24,21 @@ function calcular() {
     const C = 1.0926;
     const a_c = 0.0018896;
     const b_c = -0.0000036817;
+    const H = 2.0623;
+    const a_h = 0.0060769;
 
-    const c_w = W + a_w * temperatura + b_w * temperatura ** 2;
+    let c_w = W + a_w * temperatura + b_w * temperatura ** 2;
+    if (temperatura < 0) {
+        c_w = 4.0817 - 0.0053062 * temperatura + 0.00099516 * temperatura ** 2;
+    }
+
     const c_p = P + a_p * temperatura + b_p * temperatura ** 2;
     const c_g = G + a_g * temperatura + b_g * temperatura ** 2;
     const c_ch = CH + a_ch * temperatura + b_ch * temperatura ** 2;
     const c_c = C + a_c * temperatura + b_c * temperatura ** 2;
+    const c_h = H + a_h * temperatura;
 
-    const c_alimento = agua * c_w + proteina * c_p + grasa * c_g + carbohidratos * c_ch + ceniza * c_c;
+    const c_alimento = agua * c_w + proteina * c_p + grasa * c_g + carbohidratos * c_ch + ceniza * c_c + hielo * c_h;
 
     // Mostrar el resultado en el campo de salida
     document.getElementById("resultado").innerHTML = "El calor específico del alimento a " + temperatura + "°C es:\n"+ c_alimento.toFixed(4) + " J/(g*°C)";
